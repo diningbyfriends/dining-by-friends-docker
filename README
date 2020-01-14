@@ -1,0 +1,13 @@
+* Dining By Friends ReadMe
+
+This repository contains the DockerFile required to build the customized Theia IDE Docker container with the code as well as a docker-compose file to spin up the gremlin server and Theia container.
+
+** Building the Theia Code container
+
+```docker build -t bechbd/dining-by-friends:Jan20 .
+docker push bechbd/dining-by-friends:Jan20
+```
+
+** Running the Docker Compose File
+
+```docker-compose up -d```

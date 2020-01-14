@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  db:
+    image: tinkerpop/gremlin-server
+    ports:
+      - "8182:8182"
+  code:
+    image: bechbd/dining-by-friends:Jan20
+    ports:
+      - "3000:3000"
+    links:
+        - db
+    depends_on:
+      - db
